@@ -1,11 +1,6 @@
 # Secret Santa
 
-[![Known Vulnerabilities](http://snyk.io/test/github/mramshaw/Secret-Santa/badge.svg?style=plastic&targetFile=requirements.txt)](http://snyk.io/test/github/mramshaw/Secret-Santa?style=plastic&targetFile=requirements.txt)
-[![Build status](http://travis-ci.org/mramshaw/Secret-Santa.svg?branch=master)](http://travis-ci.org/mramshaw/Secret-Santa)
-[![Coverage Status](http://codecov.io/github/mramshaw/Secret-Santa/coverage.svg?branch=master)](http://codecov.io/github/mramshaw/Secret-Santa?branch=master)
-[![GitHub release](http://img.shields.io/github/release/mramshaw/Secret-Santa.svg?style=flat-square)](http://github.com/mramshaw/Secret-Santa/releases)
-
-A simple Secret Santa gift exchange
+A simple Secret Santa gift exchange, an adaptation of the same by mramshaw.
 
 ## Motivation
 
@@ -15,13 +10,6 @@ Everyone else will receive a gift from a random attendee.
 
 Each attendee (and partner) must have a unique name. Duplicate names will create exceptions.
 
-[TDD](http://en.wikipedia.org/wiki/Test-driven_development) was used for this exercise
- with the [pytest](http://docs.pytest.org/en/latest/) framework.
-
-[This was a fun exercise - I knocked out my first effort in a half-day or so. But it turned
- out that I had not fully understood the problem. Like a lot of random walks, the solution
- is not always deterministic. This led to some re-work. Luckily, TDD makes this relatively
- easy, at least in terms of testing time.]
 
 ## Prerequisites
 
@@ -361,20 +349,3 @@ There are some slight version differences between Python 2 and Python 3.
 * pytest-benchmark __3.2.2__
 * pytest-cov __2.6.1__
 
-## To Do
-
-- [x] Add custom exceptions
-- [x] Add logic for unsolvable cases
-- [x] Add retry logic for bad solutions
-- [x] Add coverage reporting
-- [x] Increase code coverage
-- [x] Add benchmarks for historical comparison purposes
-- [x] Refactor to extend to seasonal (rather than simply family) gatherings
-- [x] Conform code to `pylint`
-- [x] Conform code to `pycodestyle`
-- [x] Conform code to `pydocstyle`
-- [x] Conform code to `pydoc`
-- [x] Make code Python 2 and Python 3 compatible
-- [ ] Optional enhancement - prevent circular gift exchanges
-- [ ] Optional enhancement - prevent intra-family gift exchanges
-- [ ] Optional enhancement - allow for more than 1 present
